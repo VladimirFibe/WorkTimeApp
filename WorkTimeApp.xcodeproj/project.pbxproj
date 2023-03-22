@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A523521270D5AAA6283D2CB /* Pods_WorkTimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9FEA71E36F139F89AE1F7 /* Pods_WorkTimeApp.framework */; };
 		27E7D53829CB36DD00FDCE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7D53729CB36DD00FDCE34 /* AppDelegate.swift */; };
 		27E7D53A29CB36DD00FDCE34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7D53929CB36DD00FDCE34 /* SceneDelegate.swift */; };
 		27E7D53C29CB36DD00FDCE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7D53B29CB36DD00FDCE34 /* ViewController.swift */; };
-		27E7D53F29CB36DD00FDCE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E7D53D29CB36DD00FDCE34 /* Main.storyboard */; };
 		27E7D54129CB36DE00FDCE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E7D54029CB36DE00FDCE34 /* Assets.xcassets */; };
 		27E7D54429CB36DE00FDCE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E7D54229CB36DE00FDCE34 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26D9FEA71E36F139F89AE1F7 /* Pods_WorkTimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkTimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E7D53429CB36DD00FDCE34 /* WorkTimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E7D53729CB36DD00FDCE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E7D53929CB36DD00FDCE34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		27E7D53B29CB36DD00FDCE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		27E7D53E29CB36DD00FDCE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27E7D54029CB36DE00FDCE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27E7D54329CB36DE00FDCE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27E7D54529CB36DE00FDCE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAB3CADFD3FF9EC4527D91F /* Pods-WorkTimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkTimeApp.release.xcconfig"; path = "Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp.release.xcconfig"; sourceTree = "<group>"; };
+		8BE741ACB21A5F9F01481F1A /* Pods-WorkTimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkTimeApp.debug.xcconfig"; path = "Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A523521270D5AAA6283D2CB /* Pods_WorkTimeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241013FC49FC96C06E62C688 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BE741ACB21A5F9F01481F1A /* Pods-WorkTimeApp.debug.xcconfig */,
+				3CAB3CADFD3FF9EC4527D91F /* Pods-WorkTimeApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		27E7D52B29CB36DD00FDCE34 = {
 			isa = PBXGroup;
 			children = (
 				27E7D53629CB36DD00FDCE34 /* WorkTimeApp */,
 				27E7D53529CB36DD00FDCE34 /* Products */,
+				241013FC49FC96C06E62C688 /* Pods */,
+				D83D79B709D377BEEDDCFC11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,38 @@
 		27E7D53629CB36DD00FDCE34 /* WorkTimeApp */ = {
 			isa = PBXGroup;
 			children = (
-				27E7D53729CB36DD00FDCE34 /* AppDelegate.swift */,
-				27E7D53929CB36DD00FDCE34 /* SceneDelegate.swift */,
+				27E7D54C29CB37AC00FDCE34 /* Application */,
+				27E7D54B29CB379700FDCE34 /* Supporting Files */,
 				27E7D53B29CB36DD00FDCE34 /* ViewController.swift */,
-				27E7D53D29CB36DD00FDCE34 /* Main.storyboard */,
+			);
+			path = WorkTimeApp;
+			sourceTree = "<group>";
+		};
+		27E7D54B29CB379700FDCE34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				27E7D54029CB36DE00FDCE34 /* Assets.xcassets */,
 				27E7D54229CB36DE00FDCE34 /* LaunchScreen.storyboard */,
 				27E7D54529CB36DE00FDCE34 /* Info.plist */,
 			);
-			path = WorkTimeApp;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27E7D54C29CB37AC00FDCE34 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				27E7D53729CB36DD00FDCE34 /* AppDelegate.swift */,
+				27E7D53929CB36DD00FDCE34 /* SceneDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		D83D79B709D377BEEDDCFC11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26D9FEA71E36F139F89AE1F7 /* Pods_WorkTimeApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27E7D54829CB36DE00FDCE34 /* Build configuration list for PBXNativeTarget "WorkTimeApp" */;
 			buildPhases = (
+				EB945A703B0441B1461B9627 /* [CP] Check Pods Manifest.lock */,
 				27E7D53029CB36DD00FDCE34 /* Sources */,
 				27E7D53129CB36DD00FDCE34 /* Frameworks */,
 				27E7D53229CB36DD00FDCE34 /* Resources */,
+				5650FC74045378BC0558A1DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +167,52 @@
 			files = (
 				27E7D54429CB36DE00FDCE34 /* LaunchScreen.storyboard in Resources */,
 				27E7D54129CB36DE00FDCE34 /* Assets.xcassets in Resources */,
-				27E7D53F29CB36DD00FDCE34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5650FC74045378BC0558A1DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkTimeApp/Pods-WorkTimeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB945A703B0441B1461B9627 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorkTimeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27E7D53029CB36DD00FDCE34 /* Sources */ = {
@@ -147,14 +228,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27E7D53D29CB36DD00FDCE34 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27E7D53E29CB36DD00FDCE34 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		27E7D54229CB36DE00FDCE34 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +355,7 @@
 		};
 		27E7D54929CB36DE00FDCE34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE741ACB21A5F9F01481F1A /* Pods-WorkTimeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +366,9 @@
 				INFOPLIST_FILE = WorkTimeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +384,7 @@
 		};
 		27E7D54A29CB36DE00FDCE34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAB3CADFD3FF9EC4527D91F /* Pods-WorkTimeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +395,9 @@
 				INFOPLIST_FILE = WorkTimeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
