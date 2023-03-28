@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A523521270D5AAA6283D2CB /* Pods_WorkTimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9FEA71E36F139F89AE1F7 /* Pods_WorkTimeApp.framework */; };
-		279E483629D2838F007E50DE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E483529D2838F007E50DE /* R.generated.swift */; };
+		2734A19B29D2CAC8004300C6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734A19A29D2CAC8004300C6 /* R.generated.swift */; };
 		27E7D53829CB36DD00FDCE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7D53729CB36DD00FDCE34 /* AppDelegate.swift */; };
 		27E7D53A29CB36DD00FDCE34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7D53929CB36DD00FDCE34 /* SceneDelegate.swift */; };
 		27E7D53C29CB36DD00FDCE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7D53B29CB36DD00FDCE34 /* ViewController.swift */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		26D9FEA71E36F139F89AE1F7 /* Pods_WorkTimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkTimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		279E483529D2838F007E50DE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		2734A19A29D2CAC8004300C6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		27E7D53429CB36DD00FDCE34 /* WorkTimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E7D53729CB36DD00FDCE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E7D53929CB36DD00FDCE34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,18 +51,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		279E483329D281E4007E50DE /* Resources */ = {
+		2734A19929D2CA69004300C6 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				27E7D53B29CB36DD00FDCE34 /* ViewController.swift */,
+				2734A19A29D2CAC8004300C6 /* R.generated.swift */,
 			);
-			name = Resources;
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		279E483429D28377007E50DE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				279E483529D2838F007E50DE /* R.generated.swift */,
+				2734A19929D2CA69004300C6 /* Generated */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -88,10 +88,10 @@
 		27E7D53629CB36DD00FDCE34 /* WorkTimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				27E7D53B29CB36DD00FDCE34 /* ViewController.swift */,
 				279E483429D28377007E50DE /* Resources */,
 				27E7D54C29CB37AC00FDCE34 /* Application */,
 				27E7D54B29CB379700FDCE34 /* Supporting Files */,
-				279E483329D281E4007E50DE /* Resources */,
 			);
 			path = WorkTimeApp;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/WorkTimeApp/Resources/Generated/R.generated.swift\"\n";
 		};
 		5650FC74045378BC0558A1DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -260,7 +260,7 @@
 				27E7D53C29CB36DD00FDCE34 /* ViewController.swift in Sources */,
 				27E7D53829CB36DD00FDCE34 /* AppDelegate.swift in Sources */,
 				27E7D53A29CB36DD00FDCE34 /* SceneDelegate.swift in Sources */,
-				279E483629D2838F007E50DE /* R.generated.swift in Sources */,
+				2734A19B29D2CAC8004300C6 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
