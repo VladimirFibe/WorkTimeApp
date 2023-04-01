@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		26D9FEA71E36F139F89AE1F7 /* Pods_WorkTimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkTimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2734A19A29D2CAC8004300C6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		27AF48B829D7ADEE0018ED1B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		27E7D53429CB36DD00FDCE34 /* WorkTimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E7D53729CB36DD00FDCE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E7D53929CB36DD00FDCE34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		27E7D52B29CB36DD00FDCE34 = {
 			isa = PBXGroup;
 			children = (
+				27AF48B829D7ADEE0018ED1B /* README.md */,
 				27E7D53629CB36DD00FDCE34 /* WorkTimeApp */,
 				27E7D53529CB36DD00FDCE34 /* Products */,
 				241013FC49FC96C06E62C688 /* Pods */,

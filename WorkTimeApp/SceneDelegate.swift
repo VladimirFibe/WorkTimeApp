@@ -1,4 +1,5 @@
 import UIKit
+import AuthSDK
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -9,7 +10,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = ViewController()
+        window?.rootViewController = AuthViewController()
         window?.makeKeyAndVisible()
     }
 }
